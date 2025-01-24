@@ -1,0 +1,329 @@
+/* Basic reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10; /* Ensure navbar stays on top */
+}
+/* Non-fixed navbar when scrolled down */
+.navbar.scrolled {
+  position: absolute; /* Remove fixed positioning */
+  
+}
+/* Adjust padding for the page content below the navbar */
+.App {
+  padding-top: 80px; /* This will push content down by navbar height */
+}
+
+/* Button inside the navbar */
+
+/* This is the content that will appear outside and below the navbar */
+
+.popup-content {
+  position: absolute;
+  top: 60px; /* Adjust this based on your navbar height */
+  left: 35%;
+  transform: translateX(-106%);
+
+  padding: 10px;
+  background-color: white;
+
+  /* Make sure it's above other content */
+  width: 80%; /* Adjust width as needed */
+  max-width: 250px; /* Maximum width */
+  z-index: 20;
+}
+
+/* Inner content of the popup */
+
+/* Optional styling for text inside the .bottom-data */
+/* .bottom-data {
+  font-size: 18px;
+  font-weight: 500;
+  color: #404856;
+} */
+
+/* input from myside */
+input::placeholder {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  border: 0;
+  width: 80%;
+}
+
+input[type="checkbox"] {
+  accent-color: #115740;
+}
+.btnsubmit {
+  background-color: #115740;
+}
+.btnsubmit:hover {
+  background-color: #115740;
+}
+
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  width: 600px;
+}
+.modal-header {
+  border-bottom: none; /* Remove bottom border */
+  padding-bottom: 0; /* Remove extra padding below the header */
+  padding-top: 0px !important;
+}
+
+.modal-body {
+  padding-top: 0; /* Reduce padding at the top of the body */
+  margin-top: 10px; /* Adjust the space between the title and the text */
+}
+
+.modal-body span {
+  display: block;
+  margin-bottom: 10px; /* Adjust the space below the text */
+}
+
+/* pop up */
+.modal-dialogone {
+  max-width: 80% !important;
+}
+
+/*   Pop Up   */
+.pId {
+  font-family: franklin-gothic-atf, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: #404856;
+}
+.pnumber {
+  font-family: termina, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.48px;
+  color: #141f33;
+}
+.plocation {
+  font-family: franklin-gothic-atf, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: #404856;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pcombine {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.pcombineimg {
+  width: 24px !important;
+  height: 24px !important;
+}
+.pcomibnediv {
+  display: block !important;
+  unicode-bidi: isolate !important;
+}
+.popup {
+  width: 751px !important;
+  height: 539px !important;
+  /* display: block!important;
+  position: fixed!important;
+  background-color: rgba(0, 0, 0, 0.8)!important; */
+}
+
+/* Header */
+.hlocation {
+  font-family: franklin-gothic-atf, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: #404856;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.homepage {
+  font-size: clamp(3.2rem, 0.343rem + 4.762vw, 7.2rem);
+  font-family: "TerminaBlack", sans-serif;
+  font-weight: 700 !important;
+  line-height: 1.2;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.45em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+  text-align: center;
+  unicode-bidi: isolate;
+}
+.hpara {
+  padding-bottom: 70px !important;
+  font-size: 1rem;
+  margin: 2.4rem 0;
+  color: #404856;
+  line-height: 1.5;
+}
+
+/* Navbar */
+
+.bId {
+  font-family: franklin-gothic-atf, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: #115740 !important;
+}
+
+.bcontact {
+  font-family: franklin-gothic-atf, sans-serif;
+  font-size: 1rem !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: #404856;
+}
+.productdiv {
+  gap: 8px !important;
+}
+.my-input:focus {
+  outline: none;
+  border: none;
+}
+.productresp{
+right: 0!important;
+top: 0!important;
+}
+.barresp{
+display: flex;
+gap: 60px;
+}
+
+.pinimg {
+  width: 40px; /* Set the width of the marker */
+  height: 40px; /* Set the height of the marker */
+  object-fit: cover; /* Ensure the image is resized proportionally */
+}
+/* .productInDiv {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 4px !important;
+}
+.productInDivlabel {
+  display: inline-flex!important;
+  cursor: pointer!important;
+  position: relative!important;
+  gap: 4px!important;
+} */
+@media (max-width: 768px) {
+  .respsearch{
+    width: 315px!important;
+    margin: 15px;
+  }
+  .respfilter{
+    width: 342px!important;
+  }
+  .respmap{
+    height: 80%!important;
+  }
+  .respabovemap{
+    margin-bottom: 0px!important;
+  }
+  .carmarginresp{
+    margin-bottom: 130px!important;
+  }
+  .popup-content {
+    position: absolute;
+    top: 103px; /* Adjust this based on your navbar height */
+    left: 76%;
+    transform: translateX(-106%);
+  
+    padding: 10px;
+    background-color: white;
+  
+    /* Make sure it's above other content */
+    width: 80%; /* Adjust width as needed */
+    max-width: 250px; /* Maximum width */
+    z-index: 20;
+  }
+  .productresp{
+    left: 0!important;
+    margin-top: 50px!important;
+ 
+    }
+  .barresp{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .navbar {
+    background: white;
+  }
+}

@@ -1,0 +1,94 @@
+[debug] [2025-01-24T19:57:40.798Z] ----------------------------------------------------------------------
+[debug] [2025-01-24T19:57:40.801Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Hafiz Abdul Rehman\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --debug
+[debug] [2025-01-24T19:57:40.801Z] CLI Version:   13.29.2
+[debug] [2025-01-24T19:57:40.802Z] Platform:      win32
+[debug] [2025-01-24T19:57:40.802Z] Node Version:  v22.12.0
+[debug] [2025-01-24T19:57:40.802Z] Time:          Sat Jan 25 2025 00:57:40 GMT+0500 (Pakistan Standard Time)
+[debug] [2025-01-24T19:57:40.802Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-24T19:57:41.092Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-24T19:57:41.094Z] > authorizing via signed-in user (bajwaarehmanbajwa@gmail.com)
+[debug] [2025-01-24T19:57:41.094Z] [iam] checking project look4ads-32969 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-01-24T19:57:41.098Z] Checked if tokens are valid: true, expires at: 1737752234963
+[debug] [2025-01-24T19:57:41.098Z] Checked if tokens are valid: true, expires at: 1737752234963
+[debug] [2025-01-24T19:57:41.100Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/look4ads-32969:testIamPermissions [none]
+[debug] [2025-01-24T19:57:41.102Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/look4ads-32969:testIamPermissions x-goog-quota-user=projects/look4ads-32969
+[debug] [2025-01-24T19:57:41.103Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/look4ads-32969:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-24T19:57:43.244Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/look4ads-32969:testIamPermissions 200
+[debug] [2025-01-24T19:57:43.246Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/look4ads-32969:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-24T19:57:43.249Z] Checked if tokens are valid: true, expires at: 1737752234963
+[debug] [2025-01-24T19:57:43.250Z] Checked if tokens are valid: true, expires at: 1737752234963
+[debug] [2025-01-24T19:57:43.252Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/look4ads-32969 [none]
+[debug] [2025-01-24T19:57:44.480Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/look4ads-32969 200
+[debug] [2025-01-24T19:57:44.482Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/look4ads-32969 {"projectId":"look4ads-32969","projectNumber":"818700596629","displayName":"look4ads","name":"projects/look4ads-32969","resources":{"hostingSite":"look4ads-32969"},"state":"ACTIVE","etag":"1_bcc48e12-a237-4d88-858e-8096eeff508b"}
+[info] 
+[info] === Deploying to 'look4ads-32969'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-01-24T19:57:44.524Z] Checked if tokens are valid: true, expires at: 1737752234963
+[debug] [2025-01-24T19:57:44.526Z] Checked if tokens are valid: true, expires at: 1737752234963
+[debug] [2025-01-24T19:57:44.528Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/look4ads-32969/versions [none]
+[debug] [2025-01-24T19:57:44.529Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/look4ads-32969/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-01-24T19:57:47.428Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/look4ads-32969/versions 500
+[debug] [2025-01-24T19:57:47.429Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/look4ads-32969/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: Request to https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/look4ads-32969/versions had HTTP Error: 500, Internal error encountered.
+[debug] [2025-01-24T19:57:47.957Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
+[debug] [2025-01-24T19:58:51.183Z] ----------------------------------------------------------------------
+[debug] [2025-01-24T19:58:51.186Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Hafiz Abdul Rehman\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-01-24T19:58:51.187Z] CLI Version:   13.29.2
+[debug] [2025-01-24T19:58:51.187Z] Platform:      win32
+[debug] [2025-01-24T19:58:51.188Z] Node Version:  v22.12.0
+[debug] [2025-01-24T19:58:51.188Z] Time:          Sat Jan 25 2025 00:58:51 GMT+0500 (Pakistan Standard Time)
+[debug] [2025-01-24T19:58:51.188Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-24T19:58:51.582Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-24T19:58:51.583Z] > authorizing via signed-in user (bajwaarehmanbajwa@gmail.com)
+[debug] [2025-01-24T19:58:51.583Z] [iam] checking project look4ads-32969 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-01-24T19:58:51.585Z] Checked if tokens are valid: true, expires at: 1737752234963
+[debug] [2025-01-24T19:58:51.585Z] Checked if tokens are valid: true, expires at: 1737752234963
+[debug] [2025-01-24T19:58:51.587Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/look4ads-32969:testIamPermissions [none]
+[debug] [2025-01-24T19:58:51.588Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/look4ads-32969:testIamPermissions x-goog-quota-user=projects/look4ads-32969
+[debug] [2025-01-24T19:58:51.588Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/look4ads-32969:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-24T19:58:54.538Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/look4ads-32969:testIamPermissions 200
+[debug] [2025-01-24T19:58:54.538Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/look4ads-32969:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-24T19:58:54.539Z] Checked if tokens are valid: true, expires at: 1737752234963
+[debug] [2025-01-24T19:58:54.539Z] Checked if tokens are valid: true, expires at: 1737752234963
+[debug] [2025-01-24T19:58:54.540Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/look4ads-32969 [none]
+[debug] [2025-01-24T19:58:55.481Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/look4ads-32969 200
+[debug] [2025-01-24T19:58:55.482Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/look4ads-32969 {"projectId":"look4ads-32969","projectNumber":"818700596629","displayName":"look4ads","name":"projects/look4ads-32969","resources":{"hostingSite":"look4ads-32969"},"state":"ACTIVE","etag":"1_bcc48e12-a237-4d88-858e-8096eeff508b"}
+[info] 
+[info] === Deploying to 'look4ads-32969'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-01-24T19:58:55.498Z] Checked if tokens are valid: true, expires at: 1737752234963
+[debug] [2025-01-24T19:58:55.498Z] Checked if tokens are valid: true, expires at: 1737752234963
+[debug] [2025-01-24T19:58:55.498Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/look4ads-32969/versions [none]
+[debug] [2025-01-24T19:58:55.498Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/look4ads-32969/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-01-24T19:58:57.991Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/look4ads-32969/versions 500
+[debug] [2025-01-24T19:58:57.992Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/look4ads-32969/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: Request to https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/look4ads-32969/versions had HTTP Error: 500, Internal error encountered.
+[debug] [2025-01-24T19:58:58.190Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}

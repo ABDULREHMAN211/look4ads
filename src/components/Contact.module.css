@@ -1,0 +1,129 @@
+/* .Blognavback {
+  background: linear-gradient(
+    to right,
+    rgba(110, 126, 177, 255),
+    rgba(239, 142, 195, 255)
+  );
+} */
+.rmvoverflow {
+  overflow: hidden;
+}
+.Blogback {
+  background: radial-gradient(
+      closest-side at 66% 40%,
+      #00000000 13%,
+      #030303b3 100%
+    ),
+    url(../Assets/bgcontact.PNG) 0px -226px no-repeat;
+
+  height: 80vh;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .Blogback {
+    background: url(../Assets/bgcontact.PNG) 0px 0px no-repeat;
+
+    height: 100vh;
+  }
+  .first {
+    padding-right: 30px;
+  }
+}
+
+.Artback {
+  background: #fbfbfb;
+}
+.Pagiback {
+  background: linear-gradient(
+    to right,
+    rgba(232, 232, 232, 1),
+    rgba(184, 184, 184, 1)
+  );
+}
+.forposition {
+  background-color: #fbfbfb;
+}
+
+.bloghead {
+  font-family: nsb, sans-serif;
+  font-size: 56px;
+  color: #ee1d52;
+}
+.blogpara {
+  font-family: nsb, sans-serif;
+  font-size: 30px;
+}
+
+.contctformhead {
+  font-family: nsb, sans-serif;
+  font-size: 30px;
+  color: #ee1d52;
+}
+.justfntsize {
+  font-size: 23px;
+}
+.sidedivbck {
+  background: linear-gradient(217deg, #f990c5 0%, #3e78aa 100%) 0% 0% no-repeat
+    padding-box;
+}
+.blogsehead {
+  font-family: nsb, sans-serif;
+  font-size: 23px;
+}
+
+.frmlabel {
+  font-family: nsb, sans-serif;
+  font-size: 16px;
+}
+.frmsidehead {
+  font-family: nsb, sans-serif;
+  font-size: 24px;
+}
+.blogthhead {
+  font-family: nsb, sans-serif;
+  font-size: 23px;
+  color: #ee1d52;
+}
+.Pagibackone {
+  background: linear-gradient(
+    to right,
+    rgba(56, 151, 240, 1),
+    rgba(40, 119, 191, 1)
+  );
+}
+
+/* First two letters shows font name and last  letter shows font size */
+.nsf {
+  font-family: sublb, sans-serif;
+  font-size: 14px;
+}
+
+.nsrform {
+  font-family: sublb, sans-serif;
+  font-size: 20px;
+  color: #2d2d2d;
+}
+.formsidediv {
+  font-family: sublb, sans-serif;
+  font-size: 17px;
+}
+.nse {
+  font-family: nsb, sans-serif;
+  font-size: 18px;
+}
+
+.prf {
+  font-family: nsb, sans-serif;
+  font-size: 15px;
+}
+.pmfpagi {
+  font-family: pm, sans-serif;
+  font-size: 14px;
+}
+
+.formbtn {
+  font-family: pm, sans-serif;
+  font-size: 16px;
+  height: 36px;
+  width: 120px;
+}

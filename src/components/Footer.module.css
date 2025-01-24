@@ -1,0 +1,50 @@
+.footerback {
+  background: #2d2d2d;
+}
+.formcontrol::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+
+  opacity: 1; /* Firefox */
+
+  font-size: 12px;
+}
+.img {
+  width: -10px !important;
+  height: -10px !important;
+}
+
+.fbtngrop {
+  
+  font-size: 16px;
+  width: 230px;
+}
+.fheadings {
+ 
+  font-size: 16px;
+  width: 230px;
+}
+.fblack {
+  
+  font-size: 12px;
+}
+.decffntsize {
+  font-size: 13px;
+}
+.backcolor{
+    background-color: #141F33;
+    /* margin-top: 205px!important; */
+}
+@media (max-width: 768px) {
+  .frepn {
+    margin-left: -45px;
+  }
+  .lastrep {
+    display: block;
+    margin-top: 6px;
+    margin-left: -15px;
+  }
+  .decffntsize {
+    font-size: 9px;
+    margin: 4.4px;
+  }
+}
